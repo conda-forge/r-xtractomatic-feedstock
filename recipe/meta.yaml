@@ -13,7 +13,6 @@ source:
 
 build:
   number: 0
-  # No r-ncdf4 on Windows yet.
   skip: True  # [win32]
   script: R CMD INSTALL --build .
   rpaths:
