@@ -1,4 +1,4 @@
-{% set version = '3.2.0' %}
+{% set version = '3.3.2' %}
 
 package:
   name: r-xtractomatic
@@ -9,12 +9,12 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/xtractomatic_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/xtractomatic/xtractomatic_{{ version }}.tar.gz
-  sha256: a0679f32e77279a6ecf0526c2139eb00ba3194dcc91d73a4dfce00733c7af611
+  sha256: 25f2a511b4622195281982323940572363439919a3bc6344be0c3c2cf5554181
 
 build:
   number: 0
   # No r-ncdf4 on Windows yet.
-  skip: True  # [win]
+  skip: True  # [win32]
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
@@ -36,6 +36,8 @@ test:
   commands:
     - R -e "library('xtractomatic')"  # [not win]
     - R -e \"library('xtractomatic')\"  # [win]
+    - conda inspect linkages -p $PREFIX r-xtractomatic  # [not win]
+    - conda inspect objects -p $PREFIX r-xtractomatic  # [osx]
 
 about:
   home: https://github.com/rmendels/xtractomatic
