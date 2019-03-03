@@ -1,3 +1,7 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About r-xtractomatic
 ====================
 
@@ -7,7 +11,7 @@ Package license: CC0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Contains three functions that access environmental data from ERD's ERDDAP service <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along a trajectory for a given 'radius' around the point. The xtracto_3D() function extracts data in a box. The xtractogon() function extracts data in a polygon. There are also two helper functions to obtain information about available data.
+Summary: Contains three functions that access environmental data from ERD's ERDDAP service <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along a trajectory for a given "radius" around the point. The xtracto_3D() function extracts data in a box. The xtractogon() function extracts data in a polygon. There are also two helper functions to obtain information about available data, and plotting functions to plot the results.
 
 
 
@@ -48,6 +52,8 @@ conda search r-xtractomatic --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -103,3 +109,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@ocefpaf](https://github.com/ocefpaf/)
+
