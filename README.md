@@ -3,13 +3,11 @@ About r-xtractomatic
 
 Home: https://github.com/rmendels/xtractomatic
 
-Package license: CC0
+Package license: CC0-1.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xtractomatic-feedstock/blob/master/LICENSE.txt)
 
 Summary: Contains three functions that access environmental data from ERD's ERDDAP service <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along a trajectory for a given "radius" around the point. The xtracto_3D() function extracts data in a box. The xtractogon() function extracts data in a polygon. There are also two helper functions to obtain information about available data, and plotting functions to plot the results.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-xtractomatic` from the `conda-forge` channel can be achieved by ad
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-xtractomatic` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

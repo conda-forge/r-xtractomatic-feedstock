@@ -1,4 +1,4 @@
-{% set version = '3.4.2' %}
+{% set version = "3.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -13,7 +13,7 @@ source:
   sha256: 098dc26fdda15591645aa013550de24c0459717fe974d9fe71762b04cc9ce0f0
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 2
   noarch: generic
   script: R CMD INSTALL --build .
@@ -46,13 +46,9 @@ test:
 
 about:
   home: https://github.com/rmendels/xtractomatic
-  license: CC0
-  summary: Contains three functions that access environmental data from ERD's ERDDAP service
-    <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along
-    a trajectory for a given "radius" around the point. The xtracto_3D() function extracts
-    data in a box. The xtractogon() function extracts data in a polygon. There are also
-    two helper functions to obtain information about available data, and plotting functions
-    to plot the results.
+  license: CC0-1.0
+  summary: Contains three functions that access environmental data from ERD's ERDDAP service <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along a trajectory for a given "radius" around the point. The xtracto_3D() function extracts data in a box. The xtractogon() function extracts data in
+    a polygon. There are also two helper functions to obtain information about available data, and plotting functions to plot the results.
   license_family: CC
 
 extra:
