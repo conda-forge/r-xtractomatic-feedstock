@@ -1,11 +1,11 @@
-About r-xtractomatic
-====================
+About r-xtractomatic-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xtractomatic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rmendels/xtractomatic
 
 Package license: CC0-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xtractomatic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Contains three functions that access environmental data from ERD's ERDDAP service <http://coastwatch.pfeg.noaa.gov/erddap>. The xtracto() function extracts data along a trajectory for a given "radius" around the point. The xtracto_3D() function extracts data in a box. The xtractogon() function extracts data in a polygon. There are also two helper functions to obtain information about available data, and plotting functions to plot the results.
 
